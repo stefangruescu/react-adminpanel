@@ -7,3 +7,9 @@ A frontend app created using React.js and Redux.js,containing some users and pos
  redux-thunk for async data \
  sass for styling 
  
+# How to run this app :
+* clone the repository
+
+* npm install 
+
+* npm start
