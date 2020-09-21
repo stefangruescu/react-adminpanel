@@ -1,0 +1,138 @@
+/* Daca vrem ca aplicatia sa ocupe intreg viewport-ul. */
+$main-color: #ffbc00;
+$secondary-color: #333;
+
+.app {
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+
+  .user-container {
+    h2 {
+      display: inline-block;
+      margin-left: 45%;
+    }
+
+    .user-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.2rem;
+    }
+  }
+}
+
+.container {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container h1 {
+  padding-top: 1rem;
+  margin: 0 1rem;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.data-buttons,
+.color-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.color-buttons {
+  label {
+    font-size: 1.5rem;
+  }
+  input {
+    margin: 1rem 0;
+  }
+}
+
+.button-layout {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+
+  input {
+    margin-left: 40%;
+  }
+}
+
+.data-buttons button {
+  font-family: inherit;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.8s;
+  border: none;
+  margin-right: 0.28rem;
+  cursor: pointer;
+  color: #444;
+  font-weight: 600;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a2aecc;
+
+  &:hover {
+    background-color: #e8355f;
+    color: $secondary-color;
+    transform: scale(1.08);
+  }
+}
+
+@media (max-width: 1200px) {
+  .app {
+    display: grid;
+    grid-template-columns: 1fr;
+    .user-container {
+      .user-list {
+        grid-template-columns: 1fr;
+        .user-item img {
+          border-radius: 15%;
+        }
+      }
+    }
+    .post-list {
+      grid-template-columns: 1fr;
+      margin: 0 2rem;
+    }
+    .post-item {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
+  .user-add-form {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      width: 70%;
+    }
+    button {
+      margin-bottom: 2rem;
+    }
+  }
+  .color-buttons,
+  .data-buttons {
+    display: grid;
+    text-align: center;
+  }
+
+  .data-buttons {
+    width: 20%;
+    margin-left: 40%;
+  }
+}

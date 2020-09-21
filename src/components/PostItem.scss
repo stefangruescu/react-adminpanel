@@ -1,0 +1,21 @@
+.post-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 5rem;
+  border: 1px solid #333;
+  margin-bottom: 2rem;
+  background: #f0f0f0;
+  width: 50%;
+  border-radius: 3%;
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  h3,
+  p {
+    text-align: center;
+  }
+}
