@@ -13,3 +13,6 @@ A frontend app created using React.js and Redux.js,containing some users and pos
 * npm install 
 
 * npm start
+
+# Heroku Link:  
+https://react-redux-admin-panel.herokuapp.com
